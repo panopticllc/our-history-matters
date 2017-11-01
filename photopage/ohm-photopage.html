@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OHM - Photo Gallery</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<style type="text/css">
+@import url("ohm-photopage.css");
+
+</style>
+ 
+ <!-- Stylesheet -->
+ 
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="hero-image">
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid"> 
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+		  <a class="navbar-brand" href="#">OHM</a></div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="defaultNavbar1">
+		  <ul class="nav navbar-nav">
+			<li><a href="#">BLOG<span class="sr-only">(current)</span></a></li>
+      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">MEDIA<span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Photos</a></li>
+       <!-- <li><a href="#">Videos</a></li>
+        <li><a href="#">Audio</a></li> -->
+        </ul>
+      </li>
+      <li><a href="#">SHOP</a></li>
+        
+        <!-- Profile and Cart icons for navbar -->
+       <!-- <li><a href="#">
+            <span class="glyphicon glyphicon-shopping-cart"></span>
+        </a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-user"></a></li>
+		  </ul> -->
+		 
+     <!-- Search Bar -->
+     <!--<form class="navbar-form navbar-right" role="search">
+			<div class="form-group">
+			  <input type="text" class="form-control" placeholder="Search">
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		  </form> -->
+		</div>
+		<!-- /.navbar-collapse --> 
+	  </div>
+	  <!-- /.container-fluid --> 
+	</nav>
+    <div>
+      <h1 class="purple">P<br>H<br>O<br>T<br>O<br>S</h1>
+    </div>
+    <!--<div>
+      <h1 class="white">Photos</h1>
+    </div> -->
+</div>
+
+    <!-- Blog gallery -->
+  <hr>
+  <div class="row gallery">
+    <div class="thumbnail col-sm-4">
+    	<img class="img-responsive" id="hover-shadow" src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876476/selma-to-montgomery-9-2-2016_njiflm.jpg" onclick="openModal();currentslide(1)">
+    	<div class="desc">This is the description</div>
+     </div>
+    <div class="col-sm-4 thumbnail"> 
+    	<img class="img-responsive" id="hover-shadow" src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876501/Young_Lords70_NYT_Redux_1-1150x771_mxfxay.jpg" onclick="openModal();currentslide(2)">
+    	<div class="desc">This is the description</div>
+    </div>
+    <div class="col-sm-4 thumbnail"> 
+    	<img class="img-responsive" id="hover-shadow" src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876489/splash-sp-aahm_jgczkj.jpg" onclick="openModal();currentslide(3)"> 
+    	<div class="desc">This is the description</div>
+    </div>
+    <div class="col-sm-4 thumbnail"> 
+    	<img class="img-responsive" id="hover-shadow" src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876441/28ZIMMER-master768_djxdyr.jpg" onclick="openModal();currentslide(4)"> 
+    	<div class="desc">This is the description</div>
+    </div>
+    <div class="col-sm-4 thumbnail"> 
+    	<img class="img-responsive" id="hover-shadow" src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876435/1c1d792369d1d6f032c7610244d5ac01_mlx50z.jpg" onclick="openModal();currentslide(5)"> 
+    	<div class="desc">This is the description</div>
+    </div>
+    <div class="col-sm-4 thumbnail"> 
+    	<img class="img-responsive" id="hover-shadow" src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876466/photo01_ylihar.jpg" onclick="openModal();currentslide(6)"> 
+    	<div class="desc">This is the description</div>
+    </div>
+  	<div class="col-sm-4 thumbnail movedown"> 
+    	<img class="img-responsive" id="hover-shadow" src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876454/masks_brexed.jpg" onclick="openModal();currentslide(7)">
+    	<div class="desc">This is the description</div>
+    </div>
+    <div class="col-sm-4 thumbnail movedown"> 
+    	<img class="img-responsive" id="hover-shadow" src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876450/image-1-1688056_zbysi0.jpg" onclick="openModal();currentslide(8)">
+    	<div class="desc">This is the description</div>
+    </div>
+    <div class="col-sm-4 thumbnail movedown"> 
+    	<img class="img-responsive" id="hover-shadow" src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876446/black2_abou9u.jpg" onclick="openModal();currentslide(9)">
+    	<div class="desc">This is the description</div>
+    </div>  
+  </div>
+  <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 9</div>
+      <img src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876476/selma-to-montgomery-9-2-2016_njiflm.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 9</div>
+      <img src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876489/splash-sp-aahm_jgczkj.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 9</div>
+      <img src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876441/28ZIMMER-master768_djxdyr.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 9</div>
+      <img src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876441/28ZIMMER-master768_djxdyr.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 9</div>
+      <img src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876435/1c1d792369d1d6f032c7610244d5ac01_mlx50z.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 9</div>
+      <img src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876466/photo01_ylihar.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 9</div>
+      <img src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876454/masks_brexed.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 9</div>
+      <img src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876450/image-1-1688056_zbysi0.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 9</div>
+      <img src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876446/black2_abou9u.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="column">
+      <img class="demo" src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876476/selma-to-montgomery-9-2-2016_njiflm.jpg" onclick="currentSlide(1)" alt="Nature">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876489/splash-sp-aahm_jgczkj.jpg" onclick="currentSlide(2)" alt="Trolltunga">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876441/28ZIMMER-master768_djxdyr.jpg" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876441/28ZIMMER-master768_djxdyr.jpg" onclick="currentSlide(4)" alt="Lights">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876435/1c1d792369d1d6f032c7610244d5ac01_mlx50z.jpg" onclick="currentSlide(5)" alt="Lights">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876466/photo01_ylihar.jpg" onclick="currentSlide(6)" alt="Lights">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876454/masks_brexed.jpg" onclick="currentSlide(7)" alt="Lights">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876450/image-1-1688056_zbysi0.jpg" onclick="currentSlide(8)" alt="Lights">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="http://res.cloudinary.com/daz6vrnt4/image/upload/v1505876446/black2_abou9u.jpg" onclick="currentSlide(9)" alt="Lights">
+    </div>
+  </div>
+</div>
+    <!-- Footer -->
+  
+  <div class="row">
+    <div class="text-center col-md-6 col-md-offset-3">
+      <h4>Our History Matters </h4>
+      <p class="footer_paragraph">Sample text</p>
+      <!--<p>FOR THE LATEST NEWS &amp; UPDATES</p>
+      <div class="container-fluid">
+        <div class="button">SUBSCRIBE</div>
+      </div> -->
+      <p>Copyright &copy; 2017 &middot; All Rights Reserved &middot; <a href="http://yourwebsite.com/" >Our History Matters</a></p>
+    </div>
+  </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script>
+<!-- Photo Page Javascript -->
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+<script src="js/photogallery.js"></script>
+<script src="https://use.typekit.net/otm2rbc.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+</body>
+</html>

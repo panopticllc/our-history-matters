@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/* CSS Document */
+body html{
+	width: 100%;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+}
+
+.hero-image {
+	background-image: url(http://res.cloudinary.com/daz6vrnt4/image/upload/v1505607104/annie-spratt-210846_f8akly.jpg);
+	padding-bottom: 600px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 50%;
+}
+li{
+	font-family: "ff-enzo-web", sans-serif;
+}
+h1 {
+	font-family: "acier-bat-noir",sans-serif;
+	font-size: 200px;
+	position: absolute;
+	bottom: 8px;
+	right: 16px;
+}
+
+h3{
+	font-family: "abolition",sans-serif;
+}
+
+.purple{
+	color: #98368c;
+	position: absolute;
+	z-index: 2;
+	padding-bottom: 60px;
+}
+
+.white{
+	color: #fff;
+	position: absolute;
+	z-index: 1;
+}
+
+.navbar.navbar-default {
+	background-color: transparent;
+	padding-bottom: 
+}
+
+.navbar-brand{
+	font-family: "acier-bat-noir", sans-serif;
+	font-size: 30px;
+}
+
+#defaultNavbar1{
+	background-color:transparent;
+}
+
+#placeholder{
+	color: orange;
+	text-align: center;
+}
+
+#large-btn {
+	width: 60%;
+	background-color: #ffe;
+}
+
+.form-control{
+	background-color: transparent;
+
+}
+
+.blog{
+	padding-top: 60px;
+}
+
+.side-photo{
+	margin-top: 40px;
+}
+
+.column{
+	float: left;
+
+	padding: 70px 10px 10px 30px;
+}
+
+.side.column{
+	width: 25%;
+	padding-top: 10px;
+}
+
+.column.main{
+	width: 75%
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+h5{
+	font-family: "ff-enzo-web", sans-serif;
+	font-weight: bold;
+}
+
+.center{
+	align-content: center;
+}
+
+.blog-articles{
+	padding-left: 65px;
+}
+/*Footer*/
+.footer{
+	margin-top: 40px;
+	padding-top: 50px;
+}
+.button{
+	width: 150px;s
+	margin-top: 40px;
+	margin-right: 400px;
+	margin-bottom: auto;
+	margin-left: auto;
+	/*padding-top: 20px;*/
+	padding-right: 10px;
+	/*padding-bottom: 20px;*/
+	padding-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 0px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 3px solid #000;
+	color: #000;
+	transition: all 0.3s linear;
+}
+
+@media(max-width: 600px) {
+	.side.column, .column.main{
+		width: 100%;
+	}
+}
+
